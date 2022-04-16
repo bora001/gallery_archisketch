@@ -1,0 +1,148 @@
+.item_cnt .downloading {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(53, 51, 51, 0.815);
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+}
+
+.item_cnt header {
+  position: relative;
+  padding: 0 9px;
+  display: flex;
+  align-items: center;
+}
+
+.item_cnt header p {
+  text-align: left;
+  flex: 1;
+  font-size: 14px;
+}
+.item_cnt header h1 {
+  flex: 1;
+  font-size: 18px;
+}
+
+.item_cnt .select_box {
+  flex: 1;
+  text-align: left;
+}
+.item_cnt .select_box,
+.item_cnt .select_box .select_all {
+  display: flex;
+  align-items: center;
+}
+.item_cnt .select_box .select_all {
+  flex: 2;
+}
+
+.item_cnt .select_box .select_all .checked_box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.item_cnt .select_box .select_all .checked_box .unchecked_item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(73, 158, 182, 0.185);
+  background-color: #fff;
+  border-radius: 2px;
+}
+.item_cnt .select_box .select_all .checked_box .checked_item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  left: 0;
+  background-color: rgb(73, 159, 182);
+  border-radius: 2px;
+}
+.item_cnt .select_box .select_all .checked_box .checked_item::before {
+  display: block;
+  width: 5px;
+  height: 9px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-color: #fff;
+  margin-bottom: 3px;
+  z-index: 999;
+  content: "";
+}
+.item_cnt .select_box p {
+  flex: none;
+}
+.item_cnt .select_box .select_all p {
+  font-size: 14px;
+  text-indent: 10px;
+}
+
+.item_cnt .opt_box,
+.item_cnt .selected {
+  flex: 1;
+  text-align: right;
+  font-size: 16px;
+}
+.item_cnt .opt_box select {
+  width: 135px;
+  height: 30px;
+  margin-left: 10px;
+  text-indent: 10px;
+  border-color: rgb(217, 231, 233);
+}
+
+.item_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item_cnt .selected button {
+  background-color: transparent;
+  padding: 10px 7px;
+  margin-left: 10px;
+  border: 1px solid rgb(217, 231, 233);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .item_cnt header h1 {
+    font-size: 1.25vw;
+  }
+  .item_cnt .select_box .select_all p,
+  .item_cnt .selected button,
+  .item_cnt header p {
+    font-size: 0.9722vw;
+  }
+
+  .item_cnt .opt_box select {
+    font-size: 0.9722vw;
+    width: 12vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item_cnt header {
+    flex-direction: column;
+  }
+  .slider_box .img_box img {
+    width: 100%;
+    height: auto !important;
+  }
+  .item_cnt .select_box {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .item_cnt .select_box .select_all {
+    flex: none;
+  }
+}

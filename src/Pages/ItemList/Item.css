@@ -1,0 +1,93 @@
+.item {
+  position: relative;
+  cursor: pointer;
+}
+
+.item .hover_box {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  margin: 9px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.568);
+  z-index: 999;
+}
+
+.item .hover_box .btn_box {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.item .hover_box .btn_box .unchecked_item {
+  width: 20px;
+  height: 20px;
+  border: none;
+  top: 20px;
+  left: 20px;
+}
+.item .hover_box .btn_box .more_menu {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.item .hover_box .opt_box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 30px;
+}
+.item .hover_box .opt_box button {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+}
+
+.item .hover_box .view_img {
+  width: 100%;
+  height: 100%;
+}
+
+.item .img_box {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 9px;
+  border-radius: 5px;
+}
+.item .checked_item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(73, 159, 182);
+  top: 29px;
+  left: 29px;
+  z-index: 9999;
+}
+.item .checked_item::before {
+  display: block;
+  width: 5px;
+  height: 9px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-color: #fff;
+  margin-bottom: 3px;
+  z-index: 999;
+  content: "";
+}
+
+.item .img_box img {
+  width: 130%;
+}
