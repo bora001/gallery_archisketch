@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gallery_archisketch/static/css/main.d9077749.css",
+    "main.js": "/gallery_archisketch/static/js/main.d27bf32c.js",
+    "index.html": "/gallery_archisketch/index.html",
+    "main.d9077749.css.map": "/gallery_archisketch/static/css/main.d9077749.css.map",
+    "main.d27bf32c.js.map": "/gallery_archisketch/static/js/main.d27bf32c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9077749.css",
+    "static/js/main.d27bf32c.js"
+  ]
+}
